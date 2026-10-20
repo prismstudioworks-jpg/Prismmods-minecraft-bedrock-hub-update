@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js');
-  }
-    </script>
     <meta charset="UTF-8" />
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrismMods - Minecraft Bedrock Hub</title>
-    <meta name="description" content="Discover and download curated Minecraft Bedrock addons, texture packs, maps, and shaders created by the owner." />
+    <meta name="description" content="Discover and download curated Minecraft Bedrock addons, texture packs, maps, and more." />
     <meta property="og:title" content="PrismMods - Minecraft Bedrock Hub" />
-    <meta property="og:description" content="Discover and download curated Minecraft Bedrock addons, texture packs, maps, and shaders created by the owner." />
+    <meta property="og:description" content="Discover and download curated Minecraft Bedrock addons, texture packs, maps, and more." />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0f172a" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -25,4 +26,3 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
